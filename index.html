@@ -42,7 +42,7 @@ footer{padding:45px 0 25px}.foot-top{display:flex;justify-content:space-between;
 @media(max-width:700px){.contact-grid{grid-template-columns:1fr}.orgbar .wrap{display:block}.orgbar span{display:block;margin:2px 0}}
 </style>
 <header>
-  <div class="orgbar"><div class="wrap"><strong>備中地域応援プロジェクト ロトロ</strong><span>〒714-0081　笠岡市笠岡4090　｜　代表電話 <a href="tel:08019149825">080-1914-9825</a>　｜　<a href="mailto:kasakeniki.net.daihyou@gmail.com">代表メール</a></span></div></div>
+  <div class="orgbar"><div class="wrap"><strong>備中地域応援プロジェクト ロトロ</strong><span>〒714-0081　笠岡市笠岡4090　｜　代表電話 <a href="tel:08019149825">080-1914-9825</a>　｜　<a href="mailto:ikasakeniki.net.daihyou@gmail.com">代表メール</a></span></div></div>
   <div class="wrap nav">
     <a class="brand" href="#top" aria-label="備中地域応援プロジェクト ロトロ ホーム">
       <span class="mark">ロ</span><span>ロトロ<small>備中地域応援プロジェクト</small></span>
@@ -113,15 +113,15 @@ footer{padding:45px 0 25px}.foot-top{display:flex;justify-content:space-between;
 </section>
 <section class="section alt" id="contact">
   <div class="wrap"><div style="text-align:center"><div class="section-kicker">CONTACT</div><h2 class="section-title">お問い合わせ</h2><p class="lead" style="margin:0 auto">コンサート・発表会・地域イベントなどのライブ配信依頼はこちらからお送りください。内容を確認のうえ、代表メールからご連絡します。</p></div>
-  <div class="contact-grid"><div class="contact-card"><h3>ライブ配信のご依頼・お問い合わせ</h3><p>以下に入力して送信すると、お使いのメールアプリが開き、入力内容がメール本文に入ります。内容をご確認のうえ送信してください。</p>
-  <form id="streamForm"><label>お名前 *</label><input name="name" required><label>団体名・会社名</label><input name="organization"><label>返信先メールアドレス *</label><input name="email" type="email" required><label>電話番号</label><input name="phone" type="tel"><label>配信希望日</label><input name="date" type="date"><label>イベント名・配信内容 *</label><input name="event" required><label>開催場所</label><input name="place"><label>ご相談・ご要望 *</label><textarea name="message" rows="5" required></textarea><button type="submit">メール作成画面へ進む</button></form></div>
-  <div class="contact-card"><h3>電話からのお問い合わせ</h3><p>備中地域応援プロジェクト 代表</p><p style="font-size:24px;font-weight:900;color:var(--ink)"><a href="tel:08019149825">080-1914-9825</a></p><p>メールからのお問い合わせ</p><p><a href="mailto:kasakeniki.net.daihyou@gmail.com">kasakeniki.net.daihyou@gmail.com</a></p><hr style="border:0;border-top:1px solid var(--line);margin:22px 0"><h3>協賛・寄付のお願い</h3><p>活動へのご支援をご検討の方はこちらをご覧ください。</p><a class="btn" style="background:var(--ink);color:#fff" href="support.html">協賛・寄付のお願い　↗</a></div></div>
-  <div class="notice">※フォームの送信ボタンを押すとメールアプリが起動します。メールアプリが設定されていない場合は、代表メールアドレスへ直接ご連絡ください。</div></div>
+  <div class="contact-grid"><div class="contact-card"><h3>ライブ配信のご依頼・お問い合わせ</h3><p>以下に入力して送信すると、フォームから代表メールアドレスへ送信されます。</p>
+  <form id="streamForm" action="https://formsubmit.co/ikasakeniki.net.daihyou@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="【ロトロ】ライブ配信のお問い合わせ">
+  <input type="hidden" name="_template" value="table">
+  <input type="text" name="_honey" style="display:none"><label>お名前 *</label><input name="name" required><label>団体名・会社名</label><input name="organization"><label>返信先メールアドレス *</label><input name="email" type="email" required><label>電話番号</label><input name="phone" type="tel"><label>配信希望日</label><input name="date" type="date"><label>イベント名・配信内容 *</label><input name="event" required><label>開催場所</label><input name="place"><label>ご相談・ご要望 *</label><textarea name="message" rows="5" required></textarea><button type="submit">内容を送信</button></form></div>
+  <div class="contact-card"><h3>電話からのお問い合わせ</h3><p>備中地域応援プロジェクト 代表</p><p style="font-size:24px;font-weight:900;color:var(--ink)"><a href="tel:08019149825">080-1914-9825</a></p><p>メールからのお問い合わせ</p><p><a href="mailto:ikasakeniki.net.daihyou@gmail.com">ikasakeniki.net.daihyou@gmail.com</a></p><hr style="border:0;border-top:1px solid var(--line);margin:22px 0"><h3>協賛・寄付のお願い</h3><p>活動へのご支援をご検討の方はこちらをご覧ください。</p><a class="btn" style="background:var(--ink);color:#fff" href="support.html">協賛・寄付のお願い　↗</a></div></div>
+  <div class="notice">※フォーム送信には外部フォームサービス（FormSubmit）を利用します。初回のみ、代表メールアドレスに届く認証メールで受信を有効化する必要があります。</div></div>
 </section>
-<script>
-document.getElementById('streamForm').addEventListener('submit',function(e){e.preventDefault();const d=new FormData(this);const lines=['ライブ配信のお問い合わせ','',...Array.from(d.entries()).map(([k,v])=>k+': '+v)];const subject=encodeURIComponent('【ロトロ】ライブ配信のお問い合わせ');const body=encodeURIComponent(lines.join('
-'));location.href='mailto:kasakeniki.net.daihyou@gmail.com?subject='+subject+'&body='+body;});
-</script>
+
 </main>
 <footer><div class="wrap"><div class="foot-top"><div><a class="brand" href="#top"><span class="mark">ロ</span><span>ロトロ<small>備中地域応援プロジェクト</small></span></a><p class="foot-note">コンサート・発表会・地域イベントをYouTubeライブ配信で届ける、岡山県西部のネットワーク。</p></div><div class="foot-links"><a href="#streaming">ライブ配信</a><a href="#areas">活動エリア</a><a href="#about">私たちについて</a><a href="support.html">協賛・寄付</a><a href="#contact">お問い合わせ</a></div></div><div class="copyright"><span>© 備中地域応援プロジェクト ロトロ. All rights reserved.</span><span>岡山県西部を中心に活動予定</span></div></div></footer>
 <script>
