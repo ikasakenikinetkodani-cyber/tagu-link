@@ -115,6 +115,7 @@ footer{padding:45px 0 25px}.foot-top{display:flex;justify-content:space-between;
   <div class="wrap"><div style="text-align:center"><div class="section-kicker">CONTACT</div><h2 class="section-title">お問い合わせ</h2><p class="lead" style="margin:0 auto">コンサート・発表会・地域イベントなどのライブ配信依頼はこちらからお送りください。内容を確認のうえ、代表メールからご連絡します。</p></div>
   <div class="contact-grid"><div class="contact-card"><h3>ライブ配信のご依頼・お問い合わせ</h3><p>以下に入力して送信すると、フォームから代表メールアドレスへ送信されます。</p>
   <form id="streamForm" action="https://formsubmit.co/ikasakeniki.net.daihyou@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_subject" value="【ロトロ】ライブ配信のお問い合わせ">
   <input type="hidden" name="_template" value="table">
   <input type="text" name="_honey" style="display:none"><label>お名前 *</label><input name="name" required><label>団体名・会社名</label><input name="organization"><label>返信先メールアドレス *</label><input name="email" type="email" required><label>電話番号</label><input name="phone" type="tel"><label>配信希望日</label><input name="date" type="date"><label>イベント名・配信内容 *</label><input name="event" required><label>開催場所</label><input name="place"><label>ご相談・ご要望 *</label><textarea name="message" rows="5" required></textarea><button type="submit">内容を送信</button></form></div>
@@ -123,7 +124,7 @@ footer{padding:45px 0 25px}.foot-top{display:flex;justify-content:space-between;
 </section>
 
 </main>
-<footer><div class="wrap"><div class="foot-top"><div><a class="brand" href="#top"><span class="mark">ロ</span><span>ロトロ<small>備中地域応援プロジェクト</small></span></a><p class="foot-note">コンサート・発表会・地域イベントをYouTubeライブ配信で届ける、岡山県西部のネットワーク。</p></div><div class="foot-links"><a href="#streaming">ライブ配信</a><a href="#areas">活動エリア</a><a href="#about">私たちについて</a><a href="support.html">協賛・寄付</a><a href="#contact">お問い合わせ</a></div></div><div class="copyright"><span>© 備中地域応援プロジェクト ロトロ. All rights reserved.</span><span>岡山県西部を中心に活動予定</span></div></div></footer>
+<footer><div class="wrap"><div class="foot-top"><div><a class="brand" href="#top"><span class="mark">ロ</span><span>ロトロ<small>備中地域応援プロジェクト</small></span></a><p class="foot-note">コンサート・発表会・地域イベントをYouTubeライブ配信で届ける、岡山県西部のネットワーク。</p></div><div class="foot-links"><a href="#streaming">ライブ配信</a><a href="#areas">活動エリア</a><a href="#about">私たちについて</a><a href="support.html">協賛・寄付</a><a href="#contact">お問い合わせ</a><a href="privacy.html">プライバシーポリシー</a></div></div><div class="copyright"><span>© 備中地域応援プロジェクト ロトロ. All rights reserved.</span><span>岡山県西部を中心に活動予定</span></div></div></footer>
 <script>
 const menu=document.getElementById('menu'),links=document.getElementById('links');
 menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});
